@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
 
@@ -13,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/pinterest"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="20dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,62 +24,126 @@
         android:textSize="30sp"
         android:layout_gravity="center"
         android:layout="3dp"
-        android:layout_marginBottom="100dp"
-        />
-
-    <EditText
-        android:layout_width="166dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="100dp"
-        android:hint="Email" />
-
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:hint="Password" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forget your password?"
-        android:textSize="10sp"
-        android:layout_gravity="center_horizontal" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log in"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:width="250dp"
-        android:backgroundTint="#f71707"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OR"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_gravity="center" />
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginBottom="10dp"
-        android:text="Continue with Facebook" />
+        />
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="500dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget your password?"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Log in"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:width="250dp"
+            android:backgroundTint="#f71707"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4267B2"
+            android:orientation="horizontal"
+            android:clickable="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Continue with Facebook"
+               android:layout_gravity="center"
+               android:textSize="18sp"
+               android:textColor="#ffffff"
+               android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4267B2"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/google"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue with Google"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Continue,you agree to pinterest's"             android:textSize="15sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service Privacy Policy"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/black"
+                android:layout_marginTop="20sp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not on Pinterest yet? Sing up"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center" />
 
 
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="53dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="25dp"
-        android:text="continue with Google" />
 
 </LinearLayout>
